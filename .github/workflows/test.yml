@@ -1,5 +1,7 @@
 on: pull_request_target
 
+permissions: all
+
 jobs:
   test:
     runs-on: ubuntu-22.04
